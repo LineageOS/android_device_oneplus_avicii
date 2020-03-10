@@ -202,6 +202,9 @@ on boot
     chown root system /sys/kernel/dload/dload_mode
     chmod 0660 /sys/kernel/dload/dload_mode
 
+    # Set WLAN control node permissions
+    chown wifi wifi /dev/wlan
+
     chown system system /sys/class/backlight/panel0-backlight/brightness
     chown system system /sys/class/backlight/panel0-backlight/max_brightness
     chown system system /sys/class/backlight/panel1-backlight/brightness
@@ -725,9 +728,6 @@ service wifi_ftmd /system/vendor/bin/wifi_ftmd
     socket wififtmd_server dgram 0660 system system
     disabled
     oneshot
-
-on property:vendor.wifi.ftmd.load=true
-    insmod /system/lib/modules/pronto/pronto_wlan.ko con_mode=5
 
 service cnss-daemon /system/vendor/bin/cnss-daemon -n -l
     class late_start
