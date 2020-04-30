@@ -5,3 +5,6 @@
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.biometrics\.fingerprint\.inscreen@1.0-service\.oneplus_lito    u:object_r:hal_fod_lito_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.livedisplay@2\.0-service\.oneplus_lito    u:object_r:hal_livedisplay_lito_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.oneplus_lito    u:object_r:hal_touch_lito_exec:s0
+
+# tri-state-key
+/vendor/bin/tri-state-key_daemon          u:object_r:tri-state-key_daemon_exec:s0
