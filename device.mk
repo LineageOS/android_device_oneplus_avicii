@@ -422,6 +422,13 @@ PRODUCT_PACKAGES += \
     libOmxVidcCommon \
     libstagefrighthw
 
+# OnePlus
+PRODUCT_PACKAGES += \
+    oneplus-fwk.oneplus_lito
+
+PRODUCT_BOOT_JARS += \
+    oneplus-fwk.oneplus_lito
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2-service-qti
