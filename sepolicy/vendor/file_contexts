@@ -83,6 +83,10 @@
 # Block devices for the drive that holds the xbl_a and xbl_b partitions.
 /dev/block/platform/soc/1d84000\.ufshc/sd[bc]                        u:object_r:xbl_block_device:s0
 
+# HALs
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.oneplus_lito    u:object_r:hal_light_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power@1\.2-service\.oneplus_lito    u:object_r:hal_power_default_exec:s0
+
 # limits Partitions
 /dev/block/platform/soc/1d84000\.ufshc/by-name/limits                u:object_r:limits_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/limits-cdsp           u:object_r:limits_block_device:s0
