@@ -351,6 +351,18 @@ PRODUCT_PACKAGES += \
     vendor.nxp.nxpese@1.0:64 \
     vendor.nxp.nxpnfc@1.0:64
 
+# OMX
+PRODUCT_PACKAGES += \
+    libc2dcolorconvert \
+    libmm-omxcore \
+    libOmxAacEnc \
+    libOmxAmrEnc \
+    libOmxCore \
+    libOmxEvrcEnc \
+    libOmxQcelp13Enc \
+    libOmxSwVencHevc \
+    libstagefrighthw
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2-service.oneplus_lito
