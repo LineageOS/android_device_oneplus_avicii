@@ -73,4 +73,16 @@ BLOB_ROOT="${LINEAGE_ROOT}/vendor/${VENDOR}/${DEVICE}/proprietary"
 
 sed -i "s/android.hidl.base@1.0.so/libhidlbase.so\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/" "${BLOB_ROOT}/lib64/libwfdnative.so"
 
+#
+# Fix xml version
+#
+function fix_xml_version () {
+    sed -i \
+        's/xml version="2.0"/xml version="1.0"/' \
+        "$BLOB_ROOT"/"$1"
+}
+
+fix_xml_version product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml
+fix_xml_version product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml
+
 "${MY_DIR}/setup-makefiles.sh"
