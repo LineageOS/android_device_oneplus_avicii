@@ -113,8 +113,30 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
+    android.hardware.audio@2.0-service \
+    android.hardware.audio@5.0-impl \
+    android.hardware.audio.effect@5.0-impl \
+    android.hardware.audio.common@2.0-util \
+    android.hardware.audio.common@5.0-util \
+    android.hardware.soundtrigger@2.1-impl \
+    android.hardware.bluetooth.audio@2.0-impl \
+
+PRODUCT_PACKAGES += \
     audio.a2dp.default \
-    libaacwrapper
+    audio.bluetooth.default \
+    audio.r_submix.default \
+    audio.usb.default \
+    libaudio-resampler \
+    libaudioroute \
+    libhdmiedid \
+    libhfp \
+    libqcompostprocbundle \
+    libqcomvisualizer \
+    libqcomvoiceprocessing \
+    libvolumelistener \
+    tinymix \
+    libtinycompress \
+    libtinycompress.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_policy_configuration.xml \
@@ -150,6 +172,9 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
+    libbthost_if \
+    vendor.qti.hardware.bluetooth_audio@2.0.vendor \
+    vendor.qti.hardware.btconfigstore@1.0.vendor \
     BluetoothQti
 
 # Boot control
