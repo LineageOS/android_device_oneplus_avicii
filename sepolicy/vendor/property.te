@@ -1,0 +1,4 @@
+type persist_nfc_prop, property_type;
+type vendor_memplus_prop, property_type;
+type vendor_nfc_prop, property_type;
+type vendor_sensors_prop, property_type;
