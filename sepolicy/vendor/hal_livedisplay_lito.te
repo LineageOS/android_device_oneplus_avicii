@@ -1,3 +1,24 @@
 type hal_livedisplay_lito, domain;
-type hal_livedisplay_lito_exec, vendor_file_type, exec_type, file_type;
+hal_server_domain(hal_livedisplay_lito, hal_lineage_livedisplay)
 
+type hal_livedisplay_lito_exec, vendor_file_type, exec_type, file_type;
+init_daemon_domain(hal_livedisplay_lito)
+
+# Allow hal_livedisplay_lito to find hal_display_color_hwservice
+allow hal_livedisplay_lito hal_display_color_hwservice:hwservice_manager find;
+
+# Allow binder communication with hal_display_color_default
+binder_call(hal_livedisplay_lito, hal_display_color_default)
+
+# Allow hal_livedisplay_lito to use vendor-binder service
+vndbinder_use(hal_livedisplay_lito)
+
+# Allow hal_livedisplay_lito to store files under /data/vendor/display and access them
+allow hal_livedisplay_lito display_vendor_data_file:dir rw_dir_perms;
+allow hal_livedisplay_lito display_vendor_data_file:file create_file_perms;
+
+# Grant access over LiveDisplay tuneables
+allow hal_livedisplay_lito { sysfs_livedisplay_tuneable sysfs_oem sysfs_fod }:file rw_file_perms;
+
+# Allow hal_livedisplay_lito to set config_prop
+set_prop(hal_livedisplay_lito, vendor_display_prop)
