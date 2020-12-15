@@ -471,6 +471,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
+# Vendor libstdc++
+PRODUCT_PACKAGES += \
+    libstdc++.vendor
+
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
