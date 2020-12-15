@@ -189,7 +189,10 @@ PRODUCT_PACKAGES += \
 
 # Boot control
 PRODUCT_PACKAGES += \
+    android.hardware.boot@1.0-impl:64 \
+    android.hardware.boot@1.0-service \
     android.hardware.boot@1.0-impl.recovery \
+    bootctrl.lito \
     bootctrl.lito.recovery
 
 PRODUCT_PACKAGES_DEBUG += \
