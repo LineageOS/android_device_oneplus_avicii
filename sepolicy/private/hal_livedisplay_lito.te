@@ -1,3 +1,0 @@
-type hal_livedisplay_lito, coredomain, domain;
-type hal_livedisplay_lito_exec, system_file_type, exec_type, file_type;
-
