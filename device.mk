@@ -436,6 +436,10 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     device/oneplus/common
 
+# Servicetracker
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.servicetracker@1.1.vendor
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
