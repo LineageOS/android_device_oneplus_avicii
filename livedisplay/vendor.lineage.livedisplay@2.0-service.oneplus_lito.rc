@@ -15,9 +15,9 @@ on init
     chmod 0666 /sys/class/drm/card0-DSI-1/native_display_wide_color_mode
 
 on post-fs-data
-    mkdir /data/misc/display 0770 system graphics
+    mkdir /data/vendor/display 0770 system graphics
 
-service livedisplay-hal-2-0 /system/bin/hw/lineage.livedisplay@2.0-service.oneplus_lito
+service vendor.livedisplay-hal-2-0 /vendor/bin/hw/vendor.lineage.livedisplay@2.0-service.oneplus_lito
     class hal
     user system
     group system
@@ -30,4 +30,4 @@ on property:sys.boot_completed=1
     write /sys/class/drm/card0-DSI-1/native_display_p3_mode 0
     write /sys/class/drm/card0-DSI-1/native_display_srgb_color_mode 0
     write /sys/class/drm/card0-DSI-1/native_display_wide_color_mode 0
-    write /sys/class/drm/card0-DSI-1/${sys.display.mode} 1
+    write /sys/class/drm/card0-DSI-1/${vendor.display.mode} 1
