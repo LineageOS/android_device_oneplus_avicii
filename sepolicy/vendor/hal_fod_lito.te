@@ -1,7 +1,7 @@
-type hal_fod_lito, coredomain, domain;
+type hal_fod_lito, domain;
 hal_server_domain(hal_fod_lito, hal_lineage_fod)
 
-type hal_fod_lito_exec, system_file_type, exec_type, file_type;
+type hal_fod_lito_exec, vendor_file_type, exec_type, file_type;
 init_daemon_domain(hal_fod_lito)
 
 # Allow access to the HALs
