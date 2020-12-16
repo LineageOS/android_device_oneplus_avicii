@@ -374,6 +374,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
+# Misc
+PRODUCT_PACKAGES += \
+    libchrome \
+    libchrome.vendor
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.0:64 \
