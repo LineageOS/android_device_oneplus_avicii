@@ -443,6 +443,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.wifi.supplicant@2.0.vendor \
     vendor.qti.hardware.wifi.supplicant@2.1.vendor \
     wcnss_service \
+    wifi-mac-generator \
     wpa_supplicant \
     wpa_supplicant.conf
 
