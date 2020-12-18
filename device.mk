@@ -413,6 +413,13 @@ PRODUCT_PACKAGES += \
     PresencePolling \
     RcsService
 
+# RIL
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.2 \
+    android.hardware.radio.config@1.0 \
+    librmnetctl \
+    libxml2
+
 # Seccomp
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/seccomp/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
