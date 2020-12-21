@@ -21,10 +21,8 @@
 
 #include <hidl/HidlTransportSupport.h>
 #include "Usb.h"
-#include "UsbGadget.h"
 
 using android::sp;
-using android::base::GetBoolProperty;
 
 // libhwbinder:
 using android::hardware::configureRpcThreadpool;
@@ -33,15 +31,12 @@ using android::hardware::joinRpcThreadpool;
 // Generated HIDL files
 using android::hardware::usb::V1_1::IUsb;
 using android::hardware::usb::V1_1::implementation::Usb;
-using android::hardware::usb::gadget::V1_0::IUsbGadget;
-using android::hardware::usb::gadget::V1_0::implementation::UsbGadget;
 
 using android::OK;
 using android::status_t;
 
 int main() {
   android::sp<IUsb> service = new Usb();
-  android::sp<IUsbGadget> service2 = new UsbGadget();
 
   configureRpcThreadpool(2, true /*callerWillJoin*/);
   status_t status = service->registerAsService();
@@ -49,18 +44,6 @@ int main() {
   if (status != OK) {
     ALOGE("Cannot register USB HAL service");
     return 1;
-  }
-
-  if (GetBoolProperty("ro.vendor.usb.use_gadget_hal", false)) {
-    status = service2->registerAsService();
-
-    if (status != OK) {
-      ALOGE("Cannot register USB Gadget HAL service");
-      return 1;
-    }
-
-  } else {
-    ALOGE("USB Gadget HAL not used");
   }
 
   ALOGI("QTI USB HAL Ready.");

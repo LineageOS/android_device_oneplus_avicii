@@ -1,5 +1,4 @@
 cc_binary {
-
     relative_install_path: "hw",
     shared_libs: [
         "libbase",
@@ -10,13 +9,11 @@ cc_binary {
         "libhardware",
         "android.hardware.usb@1.0",
         "android.hardware.usb@1.1",
-        "android.hardware.usb.gadget@1.0",
         "libcutils",
     ],
     srcs: [
         "service.cpp",
         "Usb.cpp",
-        "UsbGadget.cpp",
     ],
 
     name: "android.hardware.usb@1.1-service-qti",
