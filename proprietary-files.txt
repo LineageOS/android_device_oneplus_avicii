@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from Nord-user 10 QKQ1.200412.002 2010231934 release-keys 
+# All unpinned blobs below are extracted from Nord-user 10 QKQ1.200412.002 2012212158 release-keys
 
 # ADSP
 vendor/bin/adsprpcd
