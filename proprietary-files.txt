@@ -1365,7 +1365,7 @@ vendor/lib64/libOmxSwVencMpeg4.so
 vendor/lib64/libtinycompress.so
 
 # NFC
--app/NxpNfcNci/NxpNfcNci.apk
+-app/NxpNfcNci/NxpNfcNci.apk|df6a589a7bc543009e8bc410ee491119bc9a4275
 -app/NxpSecureElement/NxpSecureElement.apk
 etc/nfcee_access.xml
 etc/permissions/com.nxp.nfc.xml
@@ -1779,7 +1779,7 @@ product/lib64/vendor.qti.ims.rcsconfig@1.0.so
 product/lib64/vendor.qti.ims.rcsconfig@1.1.so
 product/lib64/vendor.qti.imsrtpservice@2.0.so
 product/lib64/vendor.qti.imsrtpservice@2.1.so
--product/priv-app/ims/ims.apk
+-product/priv-app/ims/ims.apk|cbf28683297749589b2100f4816a4635977d9c12
 vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
 vendor/bin/imsrcsd
