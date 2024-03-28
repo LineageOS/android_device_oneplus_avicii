@@ -351,7 +351,7 @@ odm/firmware/fastchg/20804/oplus_vooc_fw.bin
 odm/firmware/fastchg/132700/oplus_vooc_fw_rt5125.bin
 
 # CNE
-vendor/app/CneApp/CneApp.apk
+vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_symlink
 vendor/bin/cnd
 vendor/bin/mutualex
 vendor/etc/cne/mwqem.conf
