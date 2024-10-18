@@ -20,14 +20,12 @@ PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := AC2003
 
-PRODUCT_SYSTEM_NAME := Nord
-PRODUCT_SYSTEM_DEVICE := Nord
-
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="Nord-user 12 RKQ1.211119.001 Q.202212051830:user release-keys" \
-    TARGET_DEVICE=$(PRODUCT_SYSTEM_DEVICE) \
-    TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
-
-BUILD_FINGERPRINT := OnePlus/Nord/Nord:12/RKQ1.211119.001/Q.202212051830:user/release-keys
+    BuildDesc="Nord-user 12 RKQ1.211119.001 Q.202212051830 release-keys" \
+    BuildFingerprint=OnePlus/Nord/Nord:12/RKQ1.211119.001/Q.202212051830:user/release-keys \
+    DeviceName=Nord \
+    DeviceProduct=Nord \
+    SystemDevice=Nord \
+    SystemName=Nord
