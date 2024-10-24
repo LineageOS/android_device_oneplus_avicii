@@ -10,7 +10,7 @@ odm/etc/acdbdata/Handset_cal.acdb
 odm/etc/acdbdata/Hdmi_cal.acdb
 odm/etc/acdbdata/Headset_cal.acdb
 odm/etc/acdbdata/Speaker_cal.acdb
-vendor/etc/acdbdata/adsp_avs_config.acdb
+vendor/etc/acdbdata/adsp_avs_config.acdb;SYMLINK=odm/etc/acdbdata/adsp_avs_config.acdb
 
 # ADSP
 vendor/bin/adsprpcd
