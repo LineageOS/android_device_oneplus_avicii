@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e39c2e9c_c5443d7b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-12-21T16:51:47Z",
+      "side": 1,
+      "message": "shouldn\u0027t be necessary for this device.",
+      "revId": "efb103c1dc53cb46d5367739c9e1ba356488e82d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
