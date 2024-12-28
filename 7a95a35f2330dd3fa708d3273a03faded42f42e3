@@ -70,6 +70,24 @@
       "parentUuid": "5799d734_d67782d9",
       "revId": "7a95a35f2330dd3fa708d3273a03faded42f42e3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f04502b2_2eb2a72d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-12-28T20:12:08Z",
+      "side": 1,
+      "message": "Alright, then you should aim at updating the vendor repo ideally according with each change that updates blobs. Then create a pull request.",
+      "parentUuid": "e71e5801_379e84ff",
+      "revId": "7a95a35f2330dd3fa708d3273a03faded42f42e3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
