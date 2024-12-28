@@ -52,6 +52,24 @@
       "parentUuid": "18b0c90d_c24781b2",
       "revId": "7a95a35f2330dd3fa708d3273a03faded42f42e3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e71e5801_379e84ff",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34398
+      },
+      "writtenOn": "2024-12-28T19:59:44Z",
+      "side": 1,
+      "message": "I downloaded the latest official OxygenOS AC2003_11_F.23 firmware and used Payload Dumper to extract the images. After mounting them locally, I extracted all the proprietary files using extract-files.sh. This is how I tested and verified everything. I just did not push these files to any repo yet.",
+      "parentUuid": "5799d734_d67782d9",
+      "revId": "7a95a35f2330dd3fa708d3273a03faded42f42e3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
