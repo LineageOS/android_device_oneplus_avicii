@@ -24,6 +24,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "98bca036_bcadc8ca",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 1457,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-12-28T16:11:51Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "544b3b05_57fe1128",
+      "range": {
+        "startLine": 1457,
+        "startChar": 14,
+        "endLine": 1457,
+        "endChar": 23
+      },
+      "revId": "a30efe4b75bea9b0b1d914db0c2fe3fb4aed3558",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "bc3a24e2_215333f9",
@@ -37,6 +61,24 @@
       "writtenOn": "2024-12-28T14:35:29Z",
       "side": 1,
       "message": "remove and unify system and vendor",
+      "revId": "a30efe4b75bea9b0b1d914db0c2fe3fb4aed3558",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8d319266_abbb3521",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 1503,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-12-28T16:11:51Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bc3a24e2_215333f9",
       "revId": "a30efe4b75bea9b0b1d914db0c2fe3fb4aed3558",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
