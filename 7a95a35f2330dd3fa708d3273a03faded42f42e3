@@ -34,6 +34,24 @@
       "parentUuid": "98bd1371_ea98fbb2",
       "revId": "7a95a35f2330dd3fa708d3273a03faded42f42e3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5799d734_d67782d9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-12-28T17:14:29Z",
+      "side": 1,
+      "message": "You need to run extract-files.sh against stock dump. Although, that makes me question how are you verifying this.",
+      "parentUuid": "18b0c90d_c24781b2",
+      "revId": "7a95a35f2330dd3fa708d3273a03faded42f42e3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
