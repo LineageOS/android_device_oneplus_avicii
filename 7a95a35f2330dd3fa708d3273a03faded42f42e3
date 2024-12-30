@@ -88,6 +88,24 @@
       "parentUuid": "e71e5801_379e84ff",
       "revId": "7a95a35f2330dd3fa708d3273a03faded42f42e3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d0b49856_07c82a7f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34398
+      },
+      "writtenOn": "2024-12-30T00:40:59Z",
+      "side": 1,
+      "message": "Done, the pull request has been created: https://github.com/TheMuppets/proprietary_vendor_oneplus_avicii/pull/1",
+      "parentUuid": "f04502b2_2eb2a72d",
+      "revId": "7a95a35f2330dd3fa708d3273a03faded42f42e3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
