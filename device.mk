@@ -31,7 +31,7 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     fstab.qcom.ramdisk \
     init.oplus.hw.rc \
-    init.oplus.hw.rc.recovery
+    init.oplus.hw.recovery.rc
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
