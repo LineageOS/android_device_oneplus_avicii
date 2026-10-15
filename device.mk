@@ -181,6 +181,10 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl.custom \
     fastbootd
 
+# Face unlock
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.face-service.oneplus
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.oplus \
@@ -396,6 +400,7 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
+    hardware/oneplus/aidl/face \
     hardware/oplus
 
 # Telephony
