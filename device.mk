@@ -33,6 +33,10 @@ PRODUCT_PACKAGES += \
     init.oplus.hw.rc \
     init.oplus.hw.recovery.rc
 
+# Face unlock
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.face-service.oneplus
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
@@ -50,7 +54,8 @@ PRODUCT_COPY_FILES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    hardware/oneplus/aidl/face
 
 # Vibrator
 PRODUCT_PACKAGES += \

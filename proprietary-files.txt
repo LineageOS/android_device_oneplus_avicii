@@ -196,6 +196,19 @@ odm/etc/samsung1024_ams644vk04_eyeprotect_data.xml
 odm/etc/samsung1024_ams644vk04_srgb_eyeprotect_data.xml
 vendor/etc/qdcm_calib_data_samsung_ams644vk04_fhd_cmd_mode_dsc_dsi_panel.xml
 
+# Face unlock
+my_product/non_overlay/priv-app/OPFaceUnlock/OPFaceUnlock.apk:vendor/etc/faceunlock/resources.zip
+odm/lib64/libstfaceunlockocl.so:vendor/lib64/libstfaceunlockocl.so
+odm/vendor/firmware_mnt/faceapp.b00:vendor/etc/faceunlock/faceapp.b00
+odm/vendor/firmware_mnt/faceapp.b01:vendor/etc/faceunlock/faceapp.b01
+odm/vendor/firmware_mnt/faceapp.b02:vendor/etc/faceunlock/faceapp.b02
+odm/vendor/firmware_mnt/faceapp.b03:vendor/etc/faceunlock/faceapp.b03
+odm/vendor/firmware_mnt/faceapp.b04:vendor/etc/faceunlock/faceapp.b04
+odm/vendor/firmware_mnt/faceapp.b05:vendor/etc/faceunlock/faceapp.b05
+odm/vendor/firmware_mnt/faceapp.b06:vendor/etc/faceunlock/faceapp.b06
+odm/vendor/firmware_mnt/faceapp.b07:vendor/etc/faceunlock/faceapp.b07
+odm/vendor/firmware_mnt/faceapp.mdt:vendor/etc/faceunlock/faceapp.mdt
+
 # Fingerprint
 odm/lib64/hw/fingerprint.18821_goodix9508_G2_4.default.so
 odm/lib64/hw/fingerprint.18857_goodix9508_G2_4.default.so
