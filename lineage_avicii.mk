@@ -23,8 +23,8 @@ PRODUCT_MODEL := AC2003
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="Nord-user 12 RKQ1.211119.001 Q.202212051830:user release-keys" \
-    BuildFingerprint=OnePlus/Nord/Nord:12/RKQ1.211119.001/Q.202212051830:user/release-keys \
+    BuildDesc="Nord-user 12 RKQ1.211119.001 Q.202510131819:user release-keys" \
+    BuildFingerprint=OnePlus/Nord/Nord:12/RKQ1.211119.001/Q.202510131819:user/release-keys \
     DeviceName=Nord \
     DeviceProduct=Nord \
     SystemDevice=Nord \
