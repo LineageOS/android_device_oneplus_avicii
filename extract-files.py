@@ -12,7 +12,6 @@ from extract_utils.fixups_blob import (
 )
 from extract_utils.fixups_lib import (
     lib_fixups,
-    lib_fixups_user_type,
 )
 from extract_utils.main import (
     ExtractUtils,
@@ -26,32 +25,10 @@ from extract_utils.utils import (
 )
 
 namespace_imports = [
-    'device/oneplus/avicii',
     'hardware/oplus',
-    'hardware/qcom-caf/sm8250',
-    'hardware/qcom-caf/wlan',
-    'vendor/qcom/opensource/commonsys-intf/display',
-    'vendor/qcom/opensource/commonsys/display',
-    'vendor/qcom/opensource/dataservices',
+    'vendor/oneplus/sm7250-common',
     'vendor/qcom/opensource/display',
 ]
-
-
-def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
-    return f'{lib}_vendor' if partition in ['odm', 'vendor'] else None
-
-
-lib_fixups: lib_fixups_user_type = {
-    **lib_fixups,
-    (
-        'com.qti.stats.pdlib',
-        'com.qualcomm.qti.dpm.api@1.0',
-        'libmmosal',
-        'vendor.qti.hardware.wifidisplaysession@1.0',
-        'vendor.qti.imsrtpservice@3.0',
-    ): lib_fixup_vendor_suffix,
-}
-
 
 def blob_fixup_nop_call(
     ctx: BlobFixupCtx,
@@ -89,20 +66,7 @@ def blob_fixup_nop_call(
 
         break
 
-
 blob_fixups: blob_fixups_user_type = {
-    'odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service': blob_fixup()
-        .add_needed('libshims_fingerprint.oplus.so'),
-    'odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml': blob_fixup()
-        .patch_file('blob-patches/manifest_oplus_fingerprint.patch'),
-    'product/app/PowerOffAlarm/PowerOffAlarm.apk': blob_fixup()
-        .apktool_patch('blob-patches/PowerOffAlarm.patch'),
-    'product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml': blob_fixup()
-        .regex_replace('/my_product', '/product'),
-    'system_ext/framework/oplus-ims-ext.jar': blob_fixup()
-        .apktool_patch('blob-patches/oplus-ims-ext.patch'),
-    'system_ext/lib64/libwfdnative.so': blob_fixup()
-        .replace_needed('android.hidl.base@1.0.so', 'libhidlbase.so'),
     'vendor/etc/libnfc-nci.conf': blob_fixup()
         .regex_replace('NFC_DEBUG_ENABLED=0x01', 'NFC_DEBUG_ENABLED=0x00'),
     'vendor/etc/libnfc-nxp.conf': blob_fixup()
@@ -120,9 +84,6 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('remote_register_buf'),
     'vendor/lib64/libarcsoft_super_night_raw.so': blob_fixup()
         .clear_symbol_version('remote_register_buf'),
-    'vendor/lib64/sensors.ssc.so': blob_fixup()
-        .binary_regex_replace(b'qti.sensor.wise_light', b'android.sensor.light\x00')
-        .sig_replace('F1 E9 D3 84 52 49 3F A0 72', 'F1 A9 00 80 52 09 00 A0 72'),
     'vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so': blob_fixup()
         .call(blob_fixup_nop_call, 'bl', '__cfi_check', '_ZN7android8hardware22configureRpcThreadpoolEmb@plt'),
 }  # fmt: skip
@@ -130,12 +91,14 @@ blob_fixups: blob_fixups_user_type = {
 module = ExtractUtilsModule(
     'avicii',
     'oneplus',
+    namespace_imports=namespace_imports,
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
-    namespace_imports=namespace_imports,
     add_firmware_proprietary_file=True,
 )
 
 if __name__ == '__main__':
-    utils = ExtractUtils.device(module)
+    utils = ExtractUtils.device_with_common(
+        module, 'sm7250-common', module.vendor
+    )
     utils.run()
