@@ -5,11 +5,6 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
-    <!-- Default value for proximity check on screen wake
-     NOTE ! - Enable for devices that have a fast response proximity sensor (ideally < 300ms)-->
-    <bool name="config_proximityCheckOnWake">true</bool>
-    <bool name="config_proximityCheckOnWakeEnabledByDefault">true</bool>
-
     <!-- Paths to the libraries that contain device specific key handlers -->
     <string-array name="config_deviceKeyHandlerLibs" translatable="false">
         <item>/system_ext/app/KeyHandler/KeyHandler.apk</item>
@@ -20,23 +15,5 @@
     <string-array name="config_deviceKeyHandlerClasses" translatable="false">
         <item>org.lineageos.settings.device.KeyHandler</item>
         <item>org.lineageos.lineageparts.gestures.KeyHandler</item>
-    </string-array>
-
-    <!-- Whether device has screen with higher aspect ratio -->
-    <bool name="config_haveHigherAspectRatioScreen">true</bool>
-
-    <!-- Defines the actions shown in advanced reboot submenu -->
-    <string-array name="config_restartActionsList">
-        <item>restart</item>
-        <item>restart_recovery</item>
-        <item>restart_bootloader</item>
-        <item>restart_fastboot</item>
-    </string-array>
-
-    <!-- The list of package IDs that are not allowed to use aux cameras. -->
-    <string-array name="config_cameraAuxPackageExcludeList" translatable="false">
-        <item>org.telegram.messenger</item>
-        <item>org.thunderdog.challegram</item>
-        <item>us.zoom.videomeetings</item>
     </string-array>
 </resources>
