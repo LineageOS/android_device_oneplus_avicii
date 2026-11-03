@@ -235,6 +235,9 @@ odm/etc/nfc/libnfc-nci.conf_20801:vendor/etc/libnfc-nci.conf
 odm/etc/nfc/libnfc-nxp.conf_20801:vendor/etc/libnfc-nxp.conf
 odm/lib/libpn553_fw.so:vendor/lib64/libpn553_fw.so
 
+# Sensors
+vendor/lib64/sensors.ssc.so|d04f63e7213d058c3b48269721f939ac815d77da|c68a3f9f6a97a5158a6352d675300d73b3a94269
+
 # Touchscreen firmware
 odm/firmware/tp/20801/FW_GT9886_SAMSUNG_FAE.img
 odm/firmware/tp/20801/FW_GT9886_SAMSUNG.img
