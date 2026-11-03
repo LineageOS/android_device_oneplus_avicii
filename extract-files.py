@@ -83,7 +83,8 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('remote_register_buf_attr')
         .clear_symbol_version('remote_register_buf'),
     'vendor/lib64/libarcsoft_super_night_raw.so': blob_fixup()
-        .clear_symbol_version('remote_register_buf'),
+        .clear_symbol_version('remote_register_buf')
+        .add_needed('libc++_shared.so'),
     'vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so': blob_fixup()
         .call(blob_fixup_nop_call, 'bl', '__cfi_check', '_ZN7android8hardware22configureRpcThreadpoolEmb@plt'),
 }  # fmt: skip

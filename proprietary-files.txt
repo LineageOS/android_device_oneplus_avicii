@@ -122,6 +122,7 @@ vendor/lib64/com.qti.feature2.stub.so
 vendor/lib64/com.qti.feature2.swmf.so
 vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/com.qti.chi.override.so
+vendor/lib64/libc++_shared.so
 vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/libPolarrRender.so
 vendor/lib64/libarcsoft_beautyshot.so
@@ -143,7 +144,7 @@ vendor/lib64/libarcsoft_mfsr_frt.so
 vendor/lib64/libarcsoft_portrait_distortion_correction.so
 vendor/lib64/libarcsoft_portrait_distortion_correction_20801.so;FIX_SONAME
 vendor/lib64/libarcsoft_smart_denoise.so
-vendor/lib64/libarcsoft_super_night_raw.so;DISABLE_CHECKELF
+vendor/lib64/libarcsoft_super_night_raw.so
 vendor/lib64/libarcsoft_superportrait.so
 vendor/lib64/libbitmlengine.so
 vendor/lib64/libcamera_nn_stub.so
