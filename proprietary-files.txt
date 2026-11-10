@@ -11,6 +11,9 @@ odm/etc/acdbdata/Hdmi_cal.acdb
 odm/etc/acdbdata/Headset_cal.acdb
 odm/etc/acdbdata/Speaker_cal.acdb
 
+# Audio firmware
+odm/firmware/tfa98xx.cnt
+
 # Camera
 odm/bin/vl53l1_daemon_main
 odm/etc/camera/fb_default
